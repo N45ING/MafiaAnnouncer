@@ -2,6 +2,7 @@
 #define MAFIAPLAYER_H
 
 #include <QObject>
+#include <QDebug>
 #include <QString>
 
 
@@ -22,6 +23,11 @@ public:
     double getRating();
     void setTotalGamesPlayed(int totalGamesPlayed);
     int getTotalGamesPlayed();
+    void setId(IdType id);
+    IdType getId();
+    void setSex(int sex);
+    int getSex();
+    void print();
 
 signals: void gamePlayed();
 
@@ -35,7 +41,7 @@ private:
     int points_;
     double rating_;
     int totalGamesPlayed_;
-
+    int sex_; // 0-female 1-male
 };
 
 #endif // MAFIAPLAYER_H

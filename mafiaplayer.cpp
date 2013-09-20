@@ -21,12 +21,10 @@ MafiaPlayer::MafiaPlayer(QString name, int points, int totalGamesPlayed)
     emit changeRating();
     connect(this,SIGNAL(gamePlayed()),this,SLOT(changeRating()));
 }
-
 void MafiaPlayer::setName(QString name)
 {
     name_ = name;
 }
-
 QString MafiaPlayer::getName()
 {
     return name_;
@@ -63,4 +61,27 @@ void MafiaPlayer::newId()
 void MafiaPlayer::changeRating()
 {
     //TODO ADD FORMULA FOR RATING
+}
+void MafiaPlayer::setId(IdType id)
+{
+    id_=id;
+}
+IdType MafiaPlayer::getId()
+{
+    return id_;
+}
+void MafiaPlayer::setSex(int sex)
+{
+    // 0 - female 1 - male
+    sex_=sex;
+}
+int MafiaPlayer::getSex()
+{
+    return sex_;
+    // 0- female 1-male
+}
+void MafiaPlayer::print()
+{
+    qDebug() << "Player:";
+    qDebug() << id_ << " " << name_ << " " << points_ << " " << rating_ << " " << totalGamesPlayed_ << " " << sex_ ;;
 }

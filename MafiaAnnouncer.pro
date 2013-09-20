@@ -15,14 +15,19 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mafiaannouncer.cpp \
         gamesetup.cpp \
-        mafiaplayer.cpp
+        mafiaplayer.cpp \
+        playersdatabase.cpp \
+    addplayer.cpp
 
 HEADERS  += mafiaannouncer.h \
         gamesetup.h \
-        mafiaplayer.h
+        mafiaplayer.h \
+        playersdatabase.h \
+    addplayer.h
 
 FORMS    += mafiaannouncer.ui \
-        gamesetup.ui
+        gamesetup.ui \
+    addplayer.ui
 
 RESOURCES += \
     Images.qrc

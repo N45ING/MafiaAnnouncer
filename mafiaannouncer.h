@@ -1,6 +1,8 @@
 #ifndef MAFIAANNOUNCER_H
 #define MAFIAANNOUNCER_H
 
+#include "addplayer.h"
+
 #include <QMainWindow>
 #include <QPicture>
 #include <QPainter>
@@ -23,7 +25,10 @@ private slots:
 
     void on_actionNew_triggered();
 
+    void on_actionAdd_new_player_triggered();
+
 private:
+    AddPlayer *addWindow;
     Ui::MafiaAnnouncer *ui;
 };
 

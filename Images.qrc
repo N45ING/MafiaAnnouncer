@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/Images">
         <file>intro2.jpg</file>
+        <file>addingPlayer1.jpg</file>
+        <file>addingPlayer2.jpg</file>
     </qresource>
 </RCC>
